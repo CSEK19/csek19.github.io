@@ -43,10 +43,13 @@
 
     {% if post.collection == 'teaching' %}
       <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-    <!-- {% elsif post.collection == 'publications' %}
-      <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-    {% elsif post.date %}
-      <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p> -->
+      {% elsif post.collection == 'publications' %}
+        {% if post.abstract %}
+        <details>
+          <summary>Abstract</summary>
+          <blockquote><p>{{ post.abstract }}</p></blockquote>
+        </details>
+        {% endif %}
     {% endif %}
 
     {% if post.excerpt and site.read_more != 'enabled' %}
@@ -60,34 +63,34 @@
     {% if post.citation %}
       {{ post.citation }}
     {% endif %}
-    <br>
+    <br><br>
     {% if post.link %}
-      <button class="btn btn-sm" onclick="window.location.href='{{ post.link }}'">
+      <button class="btn btn-sm z-depth-0" onclick="window.location.href='{{ post.link }}'">
         <i class="fas fa-fw fa-link zoom" aria-hidden="true"></i> Link
       </button>
     {% endif %}
     {% if post.paperurl %}
-      <button class="btn btn-sm" onclick="window.location.href='{{ base_path }}{{ post.paperurl }}'">
+      <button class="btn btn-sm z-depth-0" onclick="window.location.href='{{ base_path }}{{ post.paperurl }}'">
         <i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i> PDF
       </button>
     {% endif %}
     {% if post.slidesurl %}
-      <button class="btn btn-sm" onclick="window.location.href='{{ post.slidesurl }}'">
+      <button class="btn btn-sm z-depth-0" onclick="window.location.href='{{ post.slidesurl }}'">
         <i class="fas fa-fw fa-file-powerpoint zoom" aria-hidden="true"></i> Slides
       </button>
     {% endif %}
     {% if post.code %}
-      <button class="btn btn-sm" onclick="window.location.href='{{ post.code }}'">
+      <button class="btn btn-sm z-depth-0" onclick="window.location.href='{{ post.code }}'">
         <i class="fas fa-fw fa-code zoom" aria-hidden="true"></i> Code
       </button>
     {% endif %}
     {% if post.github %}
-      <button class="btn btn-sm" onclick="window.location.href='{{ post.github }}'">
+      <button class="btn btn-sm z-depth-0" onclick="window.location.href='{{ post.github }}'">
         <i class="fab fa-fw fa-github zoom" aria-hidden="true"></i> GitHub
       </button>
     {% endif %}
     {% if post.bibtexurl %}
-      <button class="btn btn-sm" onclick="window.location.href='{{ post.bibtexurl }}'">
+      <button class="btn btn-sm z-depth-0" onclick="window.location.href='{{ post.bibtexurl }}'">
         <i class="fas fa-fw fa-file-alt zoom" aria-hidden="true"></i> BibTeX
       </button>
     {% endif %}
