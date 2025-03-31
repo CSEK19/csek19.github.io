@@ -306,8 +306,6 @@ plugins:
   - jekyll-redirect-from
   - jemoji
   - jekyll-get-json
-  - jekyll-email-protect
-  - jekyll-3rd-party-libraries
 
 # Mimic GitHub Pages with --safe
 whitelist:
