@@ -9,6 +9,7 @@ group :jekyll_plugins do
   gem 'jekyll-get-json'
   gem 'jekyll-tabs'
   gem 'jekyll-regex-replace'
+  gem 'jekyll-terser', :git => "https://github.com/RobertoJBeltran/jekyll-terser.git"
   gem 'webrick', '~> 1.8'
 end
 
