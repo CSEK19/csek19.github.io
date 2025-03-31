@@ -13,7 +13,7 @@ title                    : "Phat Tran"
 title_separator          : "-"
 name                     : &name "Phat Tran"
 description              : &description "AI Researcher | CS PhD Student"
-url                      : https://trantphat.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : "https://trantphat.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "trantphat/trantphat.github.io"
 
