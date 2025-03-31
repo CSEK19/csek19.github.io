@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'jekyll'
+
 group :jekyll_plugins do
   gem 'jekyll'
   gem 'jekyll-feed'
@@ -12,8 +14,6 @@ group :jekyll_plugins do
   gem 'jekyll-terser', :git => "https://github.com/RobertoJBeltran/jekyll-terser.git"
   gem 'webrick', '~> 1.8'
 end
-
-gem 'github-pages'
 
 group :other_plugins do
   gem 'css_parser'

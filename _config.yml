@@ -14,7 +14,7 @@ title_separator          : "-"
 name                     : &name "Phat Tran"
 description              : &description "AI Researcher | CS PhD Student"
 url                      : "https://trantphat.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
-baseurl                  :  # the subpath of your site, e.g. "/blog"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "trantphat/trantphat.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
