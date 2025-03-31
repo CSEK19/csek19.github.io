@@ -7,11 +7,12 @@ $gray                       : #7a8288;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
+$my-grey-theme              : #828282 !default;
 
-$background                 : #474747;
+$background                 : #1c1c1d;
 $background-light           : mix(#fff, $background, 80%);
 $background-lighter         : mix(#fff, $background, 90%);
-$text                       : #ffffff;
+$text                       : adjust-color($my-grey-theme, $lightness: 40%);
 $link                       : #0ea1c5;
 $link-dark                  : mix(#000, $link, 25%);
 $link-light                 : mix(#fff, $link, 25%);
@@ -35,7 +36,7 @@ $sidebar-screen-min-width   : 1024px;
 
 /* Dark theme for the site */
 html[data-theme="dark"] {
-    --global-base-color                 : #{$background};
+    --global-base-color                 : #{$my-grey-theme};
     --global-bg-color                   : #{$background};
     --global-border-color               : #{$background-light};
     --global-code-background-color      : #fafafa;
@@ -47,6 +48,6 @@ html[data-theme="dark"] {
     --global-masthead-link-color        : #{$text};
     --global-masthead-link-color-hover  : #{$background-light};
     --global-text-color                 : #{$text};
-    --global-text-color-light           : #{$light-gray};
+    --global-text-color-light           : #{$my-grey-theme};
     --global-thead-color                : #{$background-lighter};
 }

@@ -1,0 +1,58 @@
+---
+---
+
+/*
+ * This file controls what is imported from /_sass
+ *
+ * Note that the files are processed in the order they are imported, so they are partly
+   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ */
+
+ @charset "utf-8";
+
+@import
+    "vendor/breakpoint/breakpoint",
+    "variables",
+    "base-cv",
+    "layout",
+    "distill",
+    "cv",
+    "tabs",
+    "typograms",
+    "themes-cv",
+    "font-awesome/fontawesome",
+    "font-awesome/brands",
+    "font-awesome/solid",
+    "font-awesome/regular",  
+    "tabler-icons/tabler-icons.scss",
+    "tabler-icons/tabler-icons-filled.scss",
+    "tabler-icons/tabler-icons-outline.scss",
+
+    "themes",
+    "theme/default",
+    "theme/dark",
+
+    "include/mixins",
+    "vendor/susy/susy",
+
+    "layout/reset",
+
+    "include/utilities",
+    "layout/buttons",
+    "layout/notices",
+    "layout/masthead",
+    "layout/navigation",
+    "layout/footer",
+    "syntax",
+
+    "layout/forms",
+
+    "layout/page",
+    "layout/archive",
+    "layout/sidebar",
+
+    "vendor/font-awesome/fontawesome",
+    "vendor/font-awesome/solid",
+    "vendor/font-awesome/brands",
+    "vendor/magnific-popup/magnific-popup"
+;

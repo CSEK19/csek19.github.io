@@ -94,6 +94,11 @@
         <i class="fas fa-fw fa-file-alt zoom" aria-hidden="true"></i> BibTeX
       </button>
     {% endif %}
+    {% if post.videourl %}
+    <button class="btn btn-sm z-depth-0" onclick="window.location.href='{{ post.videourl }}'">
+      <i class="fas fa-fw fa-video zoom" aria-hidden="true"></i> Video
+    </button>
+  {% endif %}
   </p>
 
     <!-- Post Date Display -->

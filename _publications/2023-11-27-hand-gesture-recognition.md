@@ -7,5 +7,6 @@ date: 2023-11-10
 paperurl: "/files/2023-hand-gesture-recognition.pdf"
 link: "https://sciforum.net/paper/view/16692"
 code: "https://github.com/trantphat/bk-hand-rehab"
+videourl: "https://youtu.be/awUSYOi5BVE?si=u54Yezoa-aHZRCJC"
 citation: "Khang Ho, Phat Tran, Sang Vo, Xuan Nguyen, Phat Le, and Tho Quan <br> <i>The 4th International Electronic Conference on Applied Sciences</i> 2023"
 ---
