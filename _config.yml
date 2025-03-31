@@ -161,7 +161,7 @@ exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
-  - .bundle
+  - .bundlef
   - .github
   - .jekyll-assets-cache
   - .sass-cache
@@ -305,6 +305,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+  - jekyll-get-json
+  - jekyll-email-protect
+  - jekyll-3rd-party-libraries
 
 # Mimic GitHub Pages with --safe
 whitelist:
